@@ -30,13 +30,6 @@ class LambdaDemo extends Component {
         <h1 type="button" onclick="loadCircles()">Circles</h1>
       </div>
     </div>
-    <script src="landbutton.js"></script>
-    <script src="circlesbutton.js"></script>
-    <script src="aboutbutton.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.pr oduction.min.js"></script>
   </body>
     )
   }
