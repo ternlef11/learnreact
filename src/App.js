@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
 import "./App.css"
+import "stylemuj.css"
 
 class LambdaDemo extends Component {
   constructor(props) {
@@ -21,12 +21,23 @@ class LambdaDemo extends Component {
     const { loading, msg } = this.state
 
     return (
-      <p>
-        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
-        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
-        <br />
-        <span>{msg}</span>
-      </p>
+      <body>
+    <div id='landingbg'>
+      <div id="demo">
+        <div class='eggcont'>
+          <div class='navicircle' type="button" onclick="loadAbout()"></div>
+        </div>
+        <h1 type="button" onclick="loadCircles()">Circles</h1>
+      </div>
+    </div>
+    <script src="landbutton.js"></script>
+    <script src="circlesbutton.js"></script>
+    <script src="aboutbutton.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.pr oduction.min.js"></script>
+  </body>
     )
   }
 }
@@ -36,7 +47,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>

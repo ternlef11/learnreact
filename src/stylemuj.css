@@ -1,0 +1,190 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    overflow: visible;
+}
+
+html {
+
+}
+
+/* landing page css */
+
+#landingbg {
+    background-color: white;
+    position:relative;
+
+
+}
+
+#demo {
+  position:absolute;
+}
+
+/* egg css */
+
+.eggcont {
+    border: solid 1px red;
+    width:300px;
+    height:300px;
+    position:absolute;
+    margin:auto;
+    left:calc(50vw - 150px);
+    top:calc(50vh - 150px);
+}
+
+.navicircle {
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+    border: solid 1px black;
+}
+
+/* about css */
+.eggmeans {
+    text-align:center;
+    border:solid 1px green;
+
+}
+
+.aboutspage{
+  height:100vh;
+  width:100vw;
+}
+
+.todaycont{
+    height: 20vh;
+    width:100vw;
+    text-align:center;
+    border: solid 1px black;
+    position:relative;
+}
+
+.todayiwill {
+    font-size:5rem;
+}
+
+.summarycont {
+    left:20px;
+    float:left;
+    position:relative;
+    padding-top:5vh;
+    width:30vw;
+    height:50vh;
+    border: solid 1px red;
+}
+
+.summary {
+    height:100%;
+    width:100%;
+    border: solid 1px blue;
+}
+
+.mylinkscont {
+    float:left;
+    padding-top: 2vh;
+    height: 20vh;
+    width:30vw;
+    border: solid 1px purple;
+}
+
+.mylinks {
+    height:100%;
+    width:100%;
+    border: solid 1px blue;
+}
+
+.experiencecont {
+    position:relative;
+    right:20px;
+    padding-top:5vh;
+    float:right;
+    width:30vw;
+    height:70vh;
+    border: solid 1px red;
+}
+
+.experience {
+    height:100%;
+    width:100%;
+    border: solid 1px blue;
+}
+
+.academiacont {
+    width:50%;
+    padding-top:10px;
+    height:100%;
+    float:left;
+    border: solid 1px green;
+}
+
+.academiacont {
+    width:50%;
+    padding-top:10px;
+    height:100%;
+    float:right;
+    border: solid 1px blue;
+}
+
+.footercont {
+    bottom:0px;
+    position:absolute;
+    width:100vw;
+    border: solid 1px blue;
+}
+
+.footer{
+
+}
+
+.copyright {
+    float:right;
+    text-align:right;
+    font-size:2rem;
+}
+
+/* code to do with movingcircles.js*/
+
+.x {
+  -webkit-animation: x 13s linear infinite alternate;
+          animation: x 13s linear infinite alternate;
+}
+
+.y {
+  -webkit-animation: y 7s linear infinite alternate;
+          animation: y 7s linear infinite alternate;
+}
+
+.circle {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border:solid 1px red;
+}
+
+@-webkit-keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(100vw - 100px));
+            transform: translateX(calc(100vw - 100px));
+  }
+}
+
+@keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(100vw - 100px));
+            transform: translateX(calc(100vw - 100px));
+  }
+}
+@-webkit-keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - 100px));
+            transform: translateY(calc(100vh - 100px));
+  }
+}
+@keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - 100px));
+            transform: translateY(calc(100vh - 100px));
+  }
+}
